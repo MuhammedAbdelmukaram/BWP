@@ -69,9 +69,8 @@ const Home = () => {
         <main>
             <div style={{display: "block", width: "100%",}}>
                 <AnnouncementBar/>
-                <NFTview isOpen={isNFTModalOpen} onClose={closeNFTModal}>
-                    <Image src={NFT} alt="NFT Fullscreen" layout="fill" objectFit="contain" />
-                </NFTview>
+                <NFTview isOpen={isNFTModalOpen} onClose={closeNFTModal}/>
+
 
                 <Modal isOpen={isModalOpen} onClose={closeModal}/>
                 <LoginModal isOpen={isLoginModalOpen} onClose={toggleLoginModal} />
