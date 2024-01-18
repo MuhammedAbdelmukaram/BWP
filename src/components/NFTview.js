@@ -9,7 +9,7 @@ const NfTview = ({ isOpen, onClose, children }) => {
         <div className={styles.modalBackdrop} onClick={onClose}>
             <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
                 {children}
-                <Image src={NFT} alt="NFT Fullscreen" layout="fill" objectFit="contain" />
+                <Image src={NFT} alt="NFT Fullscreen" layout="fill" objectFit="contain" loading="eager"/>
 
             </div>
         </div>

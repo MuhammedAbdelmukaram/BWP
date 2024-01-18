@@ -93,10 +93,10 @@ const Home = () => {
 
                     <div className={styles.socials}>
                         <a href="https://twitter.com/BountyWolfPack" target="_blank" rel="noopener noreferrer" style={{marginRight:"0.5rem", cursor:"pointer"}} className={styles.social}>
-                            <Image src={Twitter} alt="Twitter" width={30} height={30}/>
+                            <Image src={Twitter} alt="Twitter" width={30} height={30} loading="eager"/>
                         </a>
                         <a href="https://discord.gg/hbhYGPf7sw" target="_blank" rel="noopener noreferrer" style={{ cursor:"pointer"}} className={styles.social}>
-                            <Image src={Discord} alt="Discord" width={30} height={30}/>
+                            <Image src={Discord} alt="Discord" width={30} height={30} loading="eager"/>
                         </a>
 
                     </div>
@@ -109,7 +109,7 @@ const Home = () => {
                         <div className={styles.lowerInner}>
 
                             <div className={styles.gif} onClick={openNFTModal}>
-                                <Image src={NFT} alt="NFT Preview" width={540} height={540} />
+                                <Image src={NFT} alt="NFT Preview" width={540} height={540} loading="eager"/>
                             </div>
                         </div>
 
@@ -119,7 +119,7 @@ const Home = () => {
 
                             <div style={{marginTop: "2rem", paddingBottom: "3rem"}}>
                                 <div style={{display: "flex", alignItems: "center", padding: 20}}>
-                                    <Image src={bullet1} alt="Description of GIF" width={80} height={80}/>
+                                    <Image src={bullet1} alt="Description of GIF" width={80} height={80} loading="eager"/>
                                     <div style={{marginLeft: 40}}>
                                         <p className={styles.smallHeading}>Get exclusive access:</p>
                                         <p className={styles.lessIndented}>Analyses of upcoming bullish projects (NFT &
@@ -129,7 +129,7 @@ const Home = () => {
                                 </div>
 
                                 <div style={{display: "flex", alignItems: "center", padding: 20}}>
-                                    <Image src={bullet2} alt="Description of GIF" width={80} height={80}/>
+                                    <Image src={bullet2} alt="Description of GIF" width={80} height={80} loading="eager"/>
                                     <div style={{marginLeft: 40}}>
                                         <p className={styles.smallHeading}>Get payouts:</p>
                                         <p className={styles.lessIndented}>55% of secondary profits will fund our Wolf
@@ -140,7 +140,7 @@ const Home = () => {
                                 </div>
 
                                 <div style={{display: "flex", alignItems: "center", padding: 20}}>
-                                    <Image src={bullet3} alt="Description of GIF" width={80} height={80}/>
+                                    <Image src={bullet3} alt="Description of GIF" width={80} height={80} loading="eager"/>
                                     <div style={{marginLeft: 40}}>
                                         <p className={styles.smallHeading}>Have a say:</p>
                                         <p className={styles.lessIndented}>Each holder will vote on future of the
@@ -151,7 +151,7 @@ const Home = () => {
                                 </div>
 
                                 <div style={{display: "flex", alignItems: "center", padding: 20}}>
-                                    <Image src={bullet4} alt="Description of GIF" width={80} height={80}/>
+                                    <Image src={bullet4} alt="Description of GIF" width={80} height={80} loading="eager"/>
                                     <div style={{marginLeft: 40}}>
                                         <p className={styles.smallHeading}>Get smug PFP:</p>
                                         <p className={styles.lessIndented}>One of the freshest out there</p>
@@ -165,7 +165,7 @@ const Home = () => {
                     </div>
 
                     <div style={{backgroundColor: "#0a0a0a", display: "none"}}>
-                        <Image src={Blueprint} alt="Blueprint" width={700} height={700}/>
+                        <Image src={Blueprint} alt="Blueprint" width={700} height={700} loading="eager"/>
                     </div>
 
 

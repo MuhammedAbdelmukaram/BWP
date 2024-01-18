@@ -15,7 +15,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                 </div>
                 {/* Image and Coming Soon Text */}
                 <div className={styles.imageContainer}>
-                    <Image src={Dashboard} alt="Dashboard" layout="responsive"  style={{ border:"8px solid #b1b1b1"}} />
+                    <Image src={Dashboard} alt="Dashboard" layout="responsive"  style={{ border:"8px solid #b1b1b1"}} loading="eager" />
 
 
                     <div style={{marginTop:30}}>

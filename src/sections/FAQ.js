@@ -29,7 +29,7 @@ const Faq = () => {
 
                 <div className={styles.imageContainer} onClick={toggleImage}>
                     {showImage && (
-                        <Image src={Napoleon} alt="Blueprint" width={450} height={450} style={{ borderRadius: 0, border: "3px solid #fff",zIndex: 2 }}/>
+                        <Image src={Napoleon} alt="Blueprint" width={450} height={450} style={{ borderRadius: 0, border: "3px solid #fff",zIndex: 2 }} loading="eager"/>
                     )}
                     <div style={{ width:"100%", display:"flex", flexDirection: "column", alignItems:"self-start", textAlign:"center" }}>
                         {showLoader && <div className={styles.behindTextTwo}> <p style={{}}>Congratulations! </p></div>}

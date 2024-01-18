@@ -13,7 +13,7 @@ const Team = () => {
             <div style={{display: "flex", width: "100%", justifyContent: "center", gap:110}}>
                 <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                     <div style={{border: "4px solid #fff", borderRadius:1000, maxHeight:358, maxWidth:358}}>
-                        <Image src={Deity} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}}/>
+                        <Image src={Deity} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}} loading="eager"/>
                     </div>
                     <div className={styles.teamTexts}>
                         <p className={styles.teamName}>Deity</p>
@@ -27,12 +27,12 @@ const Team = () => {
                     </div>
 
                     <div style={{marginTop:30, width:"100%", display:"flex", justifyContent:"flex-end"}}>
-                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} />
+                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} loading="eager" />
                     </div>
                 </div>
                 <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                     <div style={{border: "4px solid #fff", borderRadius:1000, maxHeight:358, maxWidth:358}}>
-                        <Image src={Sophisticated} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}}/>
+                        <Image src={Sophisticated} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}} loading="eager"/>
                     </div>
                     <div className={styles.teamTexts}>
                         <p className={styles.teamName}>Sophisticated Wolf</p>
@@ -46,12 +46,12 @@ const Team = () => {
                     </div>
 
                     <div style={{marginTop:30, width:"100%", display:"flex", justifyContent:"flex-end"}}>
-                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} />
+                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} loading="eager" />
                     </div>
                 </div>
                 <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                     <div style={{border: "4px solid #fff", borderRadius:1000, maxHeight:358, maxWidth:358}}>
-                        <Image src={BamBam} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}}/>
+                        <Image src={BamBam} alt="Blueprint" width={350} height={350} style={{borderRadius:1000}} loading="eager"/>
                     </div>
                     <div className={styles.teamTexts}>
                         <p className={styles.teamName}>BamBam</p>
@@ -65,7 +65,7 @@ const Team = () => {
                     </div>
 
                     <div style={{marginTop:30, width:"100%", display:"flex", justifyContent:"flex-end"}}>
-                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} />
+                        <Image src={Twitter} alt="Blueprint" width={24} height={24} style={{marginRight:30}} loading="eager" />
                     </div>
                 </div>
             </div>

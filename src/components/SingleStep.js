@@ -8,7 +8,7 @@ const SingleStep = ({icon, text}) => {
         <div style={{display:"flex", alignItems:"center", marginTop:6}}>
 
 
-                <Image src={icon}  alt="Icon" width={20} height={20}/>
+                <Image src={icon}  alt="Icon" width={20} height={20} loading="eager"/>
 
 
             <div style={{marginLeft:12}}>
