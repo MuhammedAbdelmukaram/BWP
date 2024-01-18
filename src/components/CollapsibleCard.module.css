@@ -1,0 +1,136 @@
+.card {
+    /* Your overall card styles */
+    border-radius: 8px;
+    margin-left: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.upperContainer {
+    /* Your upper container styles */
+    background-color: #fff;
+    color: #06030A;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 4px 4px 0px 4px;
+    box-shadow: 0 4px 50px -4px rgba(0, 0, 0, 0.25);
+
+}
+
+.behindText {
+    /* Style as needed */
+    text-align: center;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+.statusDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    animation: pulse 2s infinite;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: red;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.upperTextContainer{
+
+    background-color: #fff;
+    color: #06030A;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lowerContainerOpen{
+    /* Shared lower container styles */
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+
+    width: 95%;
+    border-radius: 0px 0px 4px 4px;
+    transition: max-height 0.3s ease-in-out;
+    height: 220px;
+}
+
+.lowerContainerClosed{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+
+    width: 95%;
+    border-radius: 0px 0px 4px 4px;
+    transition: max-height 0.3s ease-in-out;
+    height: 220px;
+}
+
+
+.lowerContainerClosed {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0; /* Start with text fully transparent */
+    transition: max-height 0.3s, opacity 0.1s ease-in-out; /* Add opacity to the transition */
+}
+
+.lowerContainerOpen {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1; /* Fade in the text as the container opens */
+    transition: max-height 0.3s, opacity 0.1s ease-in-out; /* Synchronize the opacity transition with max-height */
+}
+
+
+.chevronDown, .chevronUp {
+    /* Chevron icon styles */
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    vertical-align: top;
+    width: 12px;
+    margin-left: auto;
+    cursor: pointer;
+    transform: rotate(135deg); /* Chevron pointing down */
+    transition: transform 0.1s ease-in-out;
+}
+
+.chevronUp {
+    transform: rotate(-45deg); /* Chevron pointing up */
+}
+
+/* Add more styles as necessary */

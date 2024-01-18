@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: 3px solid #ffffff;
+    font-family: var(--font-mono);
+    background-color: #180823
+}
+
+.logo {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: flex;
+    margin: 0;
+    list-style-type: none; /* Removes bullet points */
+
+
+}
+
+.social {
+    padding: 6px;
+    border-radius: 2px;
+    transition: transform 0.1s ease; /* Adjust the duration and timing function as needed */
+}
+
+.social:hover {
+    transform: scale(1.15); /* Adjust the scaling factor as needed */
+}
+
+
+.buttons.right {
+    justify-content: flex-end;
+}
+
+
+.button {
+    /* Add your button styles here */
+    display: block;
+    padding: 20.3px 50px;
+    font-size: 14px;
+    border: none;
+    font-family: var(--font-mono);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.buttonLogin{
+    padding: 20.3px 50px;
+    border: none;
+    font-family: var(--font-mono);
+    color: #06030A;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.buttonBounty {
+    /* Add your button styles here */
+    padding: 10px 50px;
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #06030A;
+    height: 100%;
+}
+
+
+
+
+.wl{
+    height: 100%;
+    padding: 10px 50px;
+    display: block;
+    font-size: 16px;
+    width: min-content;
+    line-height: 1.25;
+    border: none;
+    text-align: center;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    background-color: #9C0000;
+}
+
+.buttonLogin:hover {
+    /* Styles for hover state of .button */
+    background-color: #f5f5f5; /* Example: change background color */
+    color: #090909; /* Example: change text color */
+}
+
+.button:hover {
+    /* Styles for hover state of .button */
+    background-color: #f0f0f0; /* Example: change background color */
+    color: #333; /* Example: change text color */
+}
+
+.buttonBounty:hover {
+    /* Styles for hover state of .buttonBounty */
+    background-color: #e0e0e0; /* Example: change background color */
+    color: #000; /* Example: change text color */
+}
+
+.wl:hover {
+    /* Styles for hover state of .wl */
+    background-color: #b30000; /* Example: darker red background */
+    color: #fff; /* Example: keep text color white */
+}
+
+

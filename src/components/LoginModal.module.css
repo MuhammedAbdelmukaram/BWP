@@ -1,0 +1,69 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(5px); /* Blur effect */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.modalContent {
+    border: 2px solid white; /* White border */
+    background-color: #ffffff; /* Red background */
+    padding: 20px;
+
+    border-radius: 10px;
+    position:relative;
+}
+
+.loginModalContent {
+    border: 2px solid white; /* White border */
+    background-color: #ffffff; /* Red background */
+    padding: 20px;
+
+    border-radius: 10px;
+    position:relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.countdownWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imageContainer {
+    border-radius: 40px;
+    padding:36px;
+    width: 630px;
+    text-align: center;
+}
+
+.comingSoonText {
+    color: #06030A;
+    font-family: cursive;
+    margin-top: 46px;
+}
+
+.text{
+
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}

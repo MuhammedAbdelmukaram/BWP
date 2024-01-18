@@ -1,0 +1,57 @@
+.discordText{
+    color: #ccd1f1;
+    cursor: pointer;
+}
+
+.discordText:hover{
+    font-weight: bold;
+}
+
+.leftChevron {
+    font-size: 44px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-right: 1rem;
+    transition: text-shadow 0.1s ease-in-out; /* Add transition for hover effect */
+}
+
+.rightChevron {
+    font-size: 44px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: text-shadow 0.1s ease-in-out; /* Add transition for hover effect */
+}
+
+.leftChevron:hover, .rightChevron:hover {
+    scale: 1.1;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Adjust the shadow on hover */
+}
+
+
+.paginationDots {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dotActive {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+

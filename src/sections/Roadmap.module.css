@@ -1,0 +1,87 @@
+/* Roadmap.module.css */
+.roadmapContainer {
+    position: relative;
+    height: 1300px;
+    width: 100%;
+    box-sizing: content-box;
+    padding-bottom: 15rem;
+    margin-bottom: 12rem;
+    padding-top: 1rem;
+}
+
+.centerLine {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background-color: white;
+}
+
+.roadmapItem {
+    position: absolute;
+    background-color: #ffffff;
+    color: #06030A;
+    min-width: 400px;
+    min-height: 160px;
+    border-radius: 20px;
+    /* Set minimum width for each item */
+    padding: 2.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* optional styling */
+}
+
+.roadmapItemLast{
+    position: absolute;
+    top: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #06030A;
+    min-width: 400px;
+    min-height: 160px;
+    border-radius: 20px;
+    /* Set minimum width for each item */
+    padding: 2.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* optional styling */
+
+}
+
+.left {
+    right: 72%; /* Adjust according to your layout */
+    transform: translateX(50%);
+}
+
+.right {
+    left: 72%; /* Adjust according to your layout */
+    transform: translateX(-50%);
+}
+
+.step {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: #b30000;
+
+}
+
+.description{
+    padding: 30px;
+    font-size: 18px;
+    font-family:Bahnschrift;
+
+}
+
+.descriptionText{
+    text-align: left;
+}
+
+.bullet{
+    margin-bottom: 6px;
+}
+
+/* Add media queries as necessary to ensure responsiveness */

@@ -1,0 +1,27 @@
+/* components/CountdownTimer.module.css */
+.countdownTimer {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #b30000;
+    color: white;
+    padding: 14px 18px;
+    text-align: right;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+/* components/CountdownTimer.module.css */
+.countdownTimerStatic {
+    position: static;
+    /* Add other necessary styles to match the design when static */
+}
+
+
+.countdownTimer:hover {
+    background-color: #e30000;
+}

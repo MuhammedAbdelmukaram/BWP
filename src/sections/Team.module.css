@@ -1,0 +1,23 @@
+.teamTexts{
+    margin-top: 36px;
+}
+
+.teamName{
+    font-size: 36px;
+}
+
+.teamTitle{
+    color: #b30000;
+}
+
+.teamFacts{
+    margin-top: 26px;
+    font-family: Bahnschrift;
+    font-size: 17px;
+    padding: 20px;
+
+}
+
+.teamFact{
+    margin-top: 20px;
+}

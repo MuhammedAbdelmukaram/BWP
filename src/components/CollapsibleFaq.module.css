@@ -1,0 +1,133 @@
+/* CollapsibleFaq.module.css */
+.faqItem {
+    margin-bottom: 1rem;
+    background: #f7f7f7;
+    padding: 1rem;
+    width: 600px;
+    height: fit-content;
+    border-radius: 4px;
+    box-shadow: 0 4px 50px -4px rgba(0, 0, 0, 0.25);
+}
+
+.redWrapper {
+    height: fit-content;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    box-shadow: 1px -12px 69px 3px rgb(0 0 0 / 55%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #b30000;
+
+}
+
+.imageContainer{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+}
+
+.behindText{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    text-shadow:
+            1px 1px 1px rgba(255, 255, 255, 0.5),  /* Highlight from top-left */
+            2px 2px 1px rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    color: #fff;
+}
+
+.behindTextTwo{
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    text-shadow:
+            1px 1px 1px rgba(255, 255, 255, 0.5),  /* Highlight from top-left */
+            2px 2px 1px rgba(0, 0, 0, 0.8);
+    font-size: 34px;
+    color: #640e0e;
+}
+
+
+.fixedText {
+    position: absolute;
+    z-index: 1; /* Lower than the image's z-index */
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff; /* Adjust color as needed */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+
+
+.faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #06030A;
+}
+
+.faqAnswer {
+    text-align: left;
+    margin-top: 0.5rem;
+    font-family: cursive;
+    padding: 0.5rem;
+    color: #06030A;
+    border-top: 1px solid #000000;
+}
+
+.chevron {
+    display: inline-block;
+    color: #06030A;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+/* Im lazy, this should be module for itself in FAQ (so Faq.module.css)*/
+
+.imageContainer {
+
+    position: relative;
+    width: 450px;
+    height: 455px;
+}
+
+.loadingLine {
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    justify-self: flex-start;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    animation: loadingAnimation 7s linear;
+}
+
+@keyframes loadingAnimation {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
