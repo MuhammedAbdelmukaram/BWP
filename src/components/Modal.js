@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './modal.module.css'; // Ensure this is correctly imported
+import styles from '@/components/modal.module.css'; // Ensure this is correctly imported
 
 const Modal = ({ isOpen, onClose }) => {
     const [timeLeft1, setTimeLeft1] = useState(calculateTimeLeft( '2024-01-30T21:00:00'));
