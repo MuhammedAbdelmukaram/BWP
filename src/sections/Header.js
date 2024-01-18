@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from '../css/header.module.css';
 import Twitter from "../../public/twitter.png";
 import Image from "next/image";
-import yourIconImage from "../../public/Logo PNG FINAL.png";
+import yourIconImage from "../../public/LogoPNGFINAL.png";
 import Discord from "../../public/discord.png"; // Import as a module
 
 const Header = ({onLoginClick}) => {
