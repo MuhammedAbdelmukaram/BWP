@@ -1,7 +1,7 @@
 // pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import {metadata} from "@/app/layout";
-import banner from "../../public/banner.png";
+import banner from "../../../public/banner.png";
 
 
 
