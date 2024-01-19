@@ -9,7 +9,8 @@ export const metadata = {
   title: 'Bounty Wolf Pack',
   description: 'Just wolfs hunting for bulls... AKA NFT Hedge Fund',
   category: 'technology',
-  banner: banner
+  banner: banner,
+  image:banner,
 }
 
 export default function RootLayout({ children }) {
