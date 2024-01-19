@@ -1,6 +1,7 @@
 import { Paytone_One } from 'next/font/google'
 import Head from 'next/head'
 import './globals.css'
+import banner from '/public/banner.png'
 
 const inter = Paytone_One({ subsets: ['latin'], weight:"400" })
 
@@ -8,7 +9,7 @@ export const metadata = {
   title: 'Bounty Wolf Pack',
   description: 'Just wolfs hunting for bulls... AKA NFT Hedge Fund',
   category: 'technology',
-  banner: 'https://i.ibb.co/8NdBsk2/1500x500.png'
+  banner: banner
 }
 
 export default function RootLayout({ children }) {
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       {/* Additional Enhancements */}
       <meta name="theme-color" content="#7289DA" />
       {/* oEmbed Link (replace with your actual JSON file URL) */}
+
       <link type="application/json+oembed" href="/oembed.json" />
     </Head>
       <body className={inter.className}>{children}</body>
