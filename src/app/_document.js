@@ -5,13 +5,7 @@ import banner from "../../public/banner.png";
 
 
 
-export const metadata = {
-    title: 'Bounty Wolf Pack',
-    description: 'Just wolfs hunting for bulls... AKA NFT Hedge Fund',
-    category: 'technology',
-    banner: banner,
-    image:banner,
-}
+
 
 class MyDocument extends Document {
     render() {
@@ -21,7 +15,9 @@ class MyDocument extends Document {
                     <title>{metadata.title}</title>
                     <meta name="description" content={metadata.description} />
                     {/* Open Graph Meta Tags */}
-                    <link rel="icon" href="https://i.ibb.co/Khp7SdM/favicon-32x32.png" />
+                    <link rel="icon" href="/src/app/favicon.png" />
+                    <link rel="shortcut icon" href="/src/app/favicon.png" />
+                    <link rel="favicon" href="/src/app/favicon.png" />
                     <meta property="og:title" content={metadata.title} />
                     <meta property="og:description" content={metadata.description} />
                     <meta property="og:image" content={metadata.banner} />
