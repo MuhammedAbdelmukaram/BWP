@@ -18,15 +18,20 @@ export default function RootLayout({ children }) {
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       {/* Open Graph Meta Tags */}
+      <link rel="icon" href="https://i.ibb.co/Khp7SdM/favicon-32x32.png" />
       <meta property="og:title" content={metadata.title} />
       <meta property="og:description" content={metadata.description} />
       <meta property="og:image" content={metadata.banner} />
       <meta property="og:type" content="website" />
-      {/* Additional tags for Twitter, if you want */}
+      {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={metadata.title} />
       <meta name="twitter:description" content={metadata.description} />
       <meta name="twitter:image" content={metadata.banner} />
+      {/* Additional Enhancements */}
+      <meta name="theme-color" content="#7289DA" />
+      {/* oEmbed Link (replace with your actual JSON file URL) */}
+      <link type="application/json+oembed" href="/oembed.json" />
     </Head>
       <body className={inter.className}>{children}</body>
     </html>
